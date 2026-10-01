@@ -1,14 +1,16 @@
-arr=[]
-num=int(input("enter size of array:"))
-print("add elements of array:")
-for i in range (num):
-    a=int(input())
+arr = []
+
+num = int(input("Enter size of array: "))
+
+print("Add elements of array:")
+
+for i in range(num):
+    a = int(input())
     arr.append(a)
 
-ascarr=arr.sort()
-print("largest element:",ascarr[(len(ascarr))])
-print("second largest element",ascarr[(len(ascarr)-1)])
-print("smallest elment",ascarr[0])
-print("second smallest element",ascarr[1])
+arr.sort()
 
-
+print("Largest element:", arr[len(arr)-1])
+print("Second largest element:", arr[len(arr)-2])
+print("Smallest element:", arr[0])
+print("Second smallest element:", arr[1])
